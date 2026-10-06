@@ -123,15 +123,27 @@
 		<section id="contact" class="section-card p-4 p-md-5">
 			<div class="section-title mb-2">Contact</div>
 			<div class="schema-line mb-4"></div>
-			<div class="row g-4 align-items-center">
-				<div class="col-lg-6">
+			<div class="row g-4 align-items-start">
+				<div class="col-lg-5">
 					<h2 class="h3 fw-bold">Contact area</h2>
-					<p class="text-secondary mb-0">Put your social links, email, or a simple form here when you want to expand it.</p>
+					<p class="text-secondary mb-0">Write your name, email, and message to send me a contact form.</p>
 				</div>
-				<div class="col-lg-6">
-					<div class="placeholder-box p-4 d-flex align-items-center justify-content-center text-center">
-						<span class="text-secondary">Email, LinkedIn, GitHub, or a form</span>
-					</div>
+				<div class="col-lg-7">
+					<form class="contact-form p-4 p-md-4" action="mailto:ian.fernandezgamo5@gmail.com" method="post" enctype="text/plain">
+						<div class="mb-3">
+							<label for="name" class="form-label">Name</label>
+							<input type="text" class="form-control" id="name" name="name" placeholder="Your name" required />
+						</div>
+						<div class="mb-3">
+							<label for="email" class="form-label">Email</label>
+							<input type="email" class="form-control" id="email" name="email" placeholder="you@email.com" required />
+						</div>
+						<div class="mb-3">
+							<label for="message" class="form-label">Message</label>
+							<textarea class="form-control" id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+						</div>
+						<button type="submit" class="btn btn-info btn-lg w-100">Send</button>
+					</form>
 				</div>
 			</div>
 		</section>
